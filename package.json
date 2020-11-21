@@ -1,0 +1,13 @@
+{
+  "name": "sassp3",
+  "version": "1.0.0",
+  "description": "gs_p3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss:.public/style.css",    
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
+  },
+  "author": "gs_p3",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

@@ -574,8 +574,6 @@ padding-bottom: 50px;
 margin:0 auto; 
 
 
-
-
     & p{    
     margin: 5px 0 5px 20px;
     }
@@ -592,6 +590,12 @@ margin:0 auto;
     padding:0;
 
         & li{
+            & .bloc_text_plat{
+            width: 100%;
+            transition: width;
+            transition-duration: 400ms, 400ms;
+            transition-timing-function: linear;
+            }
            
             & .check_btn{
             transition: width, transform ;   
@@ -605,10 +609,9 @@ margin:0 auto;
             cursor:pointer;
                 & .check_btn{
                 background-color: $Tertiaire;                
-                width: 4.5em;
+                width: 4.6em;
                 height: 4.6em;
                 transform: translate(0%);
-                
                 bottom:5px;
                
                 
@@ -622,7 +625,9 @@ margin:0 auto;
                 animation-iteration-count: 1;
                 animation-timing-function: ease-in-out; 
                 }  
-                
+                & .bloc_text_plat{
+                width: calc(100% - 4.6em) ;
+                }
                 
             } 
         }
@@ -689,15 +694,17 @@ display: flex;
 
     & .heading_plats{
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "...";
+    width:100%;
+      
+
+        & h2{
+        width:100%;
+        font-size: 18px;
+        margin: 10px 20px 5px 15px; 
+        overflow: hidden;
+        text-overflow:ellipsis;         
+        } 
     }
-
-    & h2{
-    font-size: 18px;
-    margin: 10px 0 5px 15px;        
-    } 
-
      
 }        
 //  ----------
@@ -710,6 +717,7 @@ width: 100%;
 justify-content: left;
 padding: 0;
 margin:0;
+
   
 }
 
@@ -720,24 +728,23 @@ flex-wrap:nowrap;
 margin: 0 20px;
 
 /***********/
-  
+ 
 
     & h3{     
-        font-size: 16px;
-        font-weight: 100;
-        margin:0 20px 0 0;
-        padding: 0;
-        height: 1.2rem;
-    display: inline-block;
+    font-size: 16px;
+    font-weight: 100;
+    margin:0 20px 0 0;
+    padding-right: 10px;
+    height: 1.2rem;
+    display: inline;
     overflow: hidden;
-    text-overflow: ellipsis; 
-    
+    text-overflow: ellipsis;
+    white-space:nowrap; 
+    width: 100%;
     }
 
 /* ***************************************/
     
-
-
     & p{           
     font-weight: bold;
     font-size: 16px;
@@ -757,7 +764,7 @@ bottom:0em;
 margin: 0;                   
 width: 0em;
 height: 0em;
-background-color:#f2f2f2; 
+background-color:$background-col; 
 border-radius: 0 20px 20px 0;
 transform: translate(250%);
 
@@ -769,7 +776,7 @@ transform: translate(250%);
     padding: 6px 5px;
     margin: auto;
     border-radius: 100%;
-    background-color: #f2f2f2;
+    background-color: $background-col;
           
     }
 }
@@ -1492,13 +1499,13 @@ justify-content: space-between;
 flex-wrap:nowrap;
 margin: 0 20px;
  
-/* ***************************************/
+/* **************************************
     & .bph3{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: "...";  
     }
-
+*/
     & h3{           
     font-size: 20px;
     font-weight: 100;
