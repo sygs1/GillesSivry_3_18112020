@@ -75,28 +75,30 @@ margin: 0 auto;
 
 
 .sp-heart {
-display: grid;
-grid-template-columns: 1fr;
-position: relative;   
+z-index: -1;   
+position: relative;
+margin:0 auto;
 width:400px;
+height:10px;
 text-align:center;
 
-    & i{font-size:255px;
-    text-align: center;
+
+    & i{font-size:400px;       
+    align-self: center;
     }
 
     & div{
     color:lighten($Primaire,15);
     position: absolute;
     top:300px;
-    left: 90px; 
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     background: inherit;
     animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-delay: .2s;
     animation-iteration-count:2;
     opacity:0;
+   
     }
 
     & div:after, div:before {
@@ -105,23 +107,27 @@ text-align:center;
     display: block;
     width: 200px;
     height: 200px;
-    background: inherit;
+    background: transparent;
     }
 
     & div:before {
     left: -100px;
     border-radius: 50% 0 0 50%;
     }
+
     & div:after {
     top: -100px;
     border-radius: 50% 50% 0 0;
+    
     }
+    
 
 }
 @keyframes sp-heart {
     0% {
     transform: scale(0.95);
     opacity:0;
+    
     }
     5% {
     transform: scale(1.1);
@@ -142,6 +148,7 @@ text-align:center;
     100% {
     transform: scale(0.9);
     opacity:0%;
+   
     }
     
 }
@@ -850,21 +857,23 @@ margin: 0 auto;
 
 
 .sp-heart {
-    display: inline-block;
-    position: relative;   
-    transform-origin: 40px 40px;
-    width:100%;
-    height: 100%;
+    z-index: -1;
+    position: relative;
+    margin:0 auto;
+    width:400px;
+    height:10px;
+    text-align:center;
+    align-content:center;
     
     
         & i{
+        font-size: 400px;
         color:lighten($Primaire,15);
-        font-size: 350px;
+        }
+
+        & div{
         position: absolute;
-        top:60%;
-        left:30%;
-        width: 13rem;
-        height: 13rem;
+        top:400px;
         background: inherit;
         animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-delay: .2s;
@@ -876,8 +885,8 @@ margin: 0 auto;
         content: " ";
         position: absolute;
         display: block;
-        width: 13rem;
-        height: 13rem;
+        width: 400px;
+        height: 400px;
         background: inherit;
         }
     
@@ -1501,11 +1510,7 @@ flex-wrap:nowrap;
 margin: 0 20px;
  
 /* **************************************
-    & .bph3{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "...";  
-    }
+  
 */
     & h3{           
     font-size: 20px;
@@ -1634,21 +1639,23 @@ transform: translate(250%);
 
 
 .sp-heart {
-    display: inline-block;
-    position: relative;   
-    transform-origin: 40px 40px;
-    width:100%;
-    height: 100%;
+    z-index: -1;
+    position: relative;
+    margin:0 auto;
+    width:500px;
+    height:10px;
+    text-align:center;
     
     
         & i{
         color:lighten($Primaire,15);
-        font-size: 450px;
+        font-size: 500px;
+        }
+        & div{
         position: absolute;
-        top:50%;
-        left:35%;
-        width: 13rem;
-        height: 13rem;
+        top:300px;
+        width: 500px;
+        height:500px;
         background: inherit;
         animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-delay: .2s;
@@ -1660,8 +1667,8 @@ transform: translate(250%);
         content: " ";
         position: absolute;
         display: block;
-        width: 13rem;
-        height: 13rem;
+        width: 400px;
+        height:400px;
         background: inherit;
         }
     
@@ -1672,6 +1679,7 @@ transform: translate(250%);
         & div:after {
         top: -7rem;
         border-radius: 50% 50% 0 0;
+        
         }
     
     }

@@ -1210,11 +1210,7 @@
     flex-wrap: nowrap;
     margin: 0 20px;
     /* **************************************
-        & .bph3{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: "...";  
-        }
+
     */
   }
   .byline_plat h3 {
