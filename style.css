@@ -9,6 +9,7 @@
 @media screen and (max-width: 767px) {
   .vewport {
     width: 499px;
+    min-width: 319px;
   }
 
   h1 {
@@ -17,34 +18,39 @@
 
   h2 {
     font-family: "roboto";
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     font-weight: bold;
   }
 
   h3 {
     font-family: "roboto";
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     font-weight: bold;
   }
 
   p {
     font-family: "roboto";
-    font-size: 16px;
+    font-size: 14px;
     color: black;
   }
 
   body {
-    width: 100%;
+    width: 97%;
     padding: 5px;
-    margin: 5px auto;
+    margin: 0 auto;
   }
 
   header {
+    width: 95%;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  header img {
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -52,20 +58,19 @@
     z-index: -1;
     position: relative;
     margin: 0 auto;
-    width: 400px;
-    height: 10px;
+    width: 95%;
+    height: 100%;
     text-align: center;
   }
   .sp-heart i {
-    font-size: 400px;
+    font-size: 200px;
     align-self: center;
   }
   .sp-heart div {
     color: #bc95e9;
     position: absolute;
     top: 300px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
     background: inherit;
     animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-delay: 0.2s;
@@ -76,8 +81,8 @@
     content: " ";
     position: absolute;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background: transparent;
   }
   .sp-heart div:before {
@@ -120,12 +125,16 @@
     background-color: #f2f2f2;
     padding-bottom: 30px;
     text-align: center;
+    margin: 0 auto;
+  }
+  .localisation h2 {
+    font-size: 20px;
   }
   .localisation input {
-    width: 40%;
+    width: 50%;
     border: none;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
     background-color: #e5e5e5;
     margin: 10px auto;
@@ -133,7 +142,7 @@
     border: none;
   }
   .localisation input i {
-    font-size: 23px;
+    font-size: 12px;
   }
   .localisation input textarea :focus {
     background-color: #e5e5e5;
@@ -147,10 +156,12 @@
   }
   .localisation .choixVille {
     font-size: 20px;
+    width: 99%;
     background-color: #e5e5e5;
-    padding: 10px 20px;
-    box-shadow: 0px -2px 2px 1px #999999;
+    padding: 10px 0px;
+    box-shadow: 0px -2px 0px 1px #999999;
     text-align: center;
+    margin: 0 auto;
   }
   .localisation .btnVille {
     color: white;
@@ -177,9 +188,14 @@
 
   .presentation {
     width: 100%;
+    margin: 0 auto;
+  }
+  .presentation .pres {
+    margin: 0 auto;
   }
   .presentation h2 {
     margin-left: 30px;
+    font-size: 20px;
   }
   .presentation ul {
     list-style: none;
@@ -188,18 +204,18 @@
     justify-content: left;
   }
   .presentation ul li {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
   .presentation ul li :hover {
-    background-color: white;
+    background-color: #f2eafb;
     box-shadow: 0px 2px 2px 1px #333333;
   }
   .presentation ul li :hover :not(.fcct1) {
     box-shadow: none;
   }
   .presentation .fctt1 {
-    width: 75%;
+    width: 95%;
     display: flex;
     padding: 0;
     margin: 20px auto;
@@ -218,7 +234,7 @@
   .presentation .fctt1 i {
     align-content: center;
     font-size: 22px;
-    padding: 20px 20px;
+    padding: 20px 10px;
     color: grey;
   }
   .presentation .fctt1 .icoStore i {
@@ -228,7 +244,7 @@
     font-family: "Roboto";
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border: none;
     padding: 20px 0;
@@ -237,9 +253,8 @@
   #sectionResto {
     width: 100%;
     background-color: #f2f2f2;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    margin-top: 50px;
+    padding: 30px 0 60px 0px;
+    margin: 50px auto;
     line-height: 1em;
   }
   #sectionResto .lien_blocResto_page {
@@ -248,14 +263,20 @@
   #sectionResto .lien_blocResto_page :hover {
     cursor: pointer;
   }
+  #sectionResto .resto {
+    width: 100%;
+    margin: 0 auto;
+  }
   #sectionResto h2 {
     margin-left: 30px;
+    font-size: 20px;
   }
   #sectionResto p {
     font-size: 16px;
   }
   #sectionResto .blocResto {
-    margin: 20px 20px;
+    width: calc(100%-50px);
+    margin: 20px 5px 10px 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -264,7 +285,7 @@
   }
   #sectionResto .blocResto .Rimg {
     width: 95%;
-    height: 15em;
+    height: 10em;
     object-fit: cover;
     border-radius: 30px 30px 0 0;
     margin: 5px auto;
@@ -289,14 +310,14 @@
   }
   #sectionResto .blocResto .btnCoeur :nth-child(1) {
     position: absolute;
-    right: 0.9em;
+    right: 0.5em;
     color: #9356DC;
     background-color: white;
     opacity: 1;
   }
   #sectionResto .blocResto .btnCoeur :nth-child(2) {
     position: relative;
-    right: 0.9em;
+    right: 0.5em;
     color: black;
     background-color: white;
     transition: opacity 0.5s cubic-bezier(0.66, 0.02, 0.56, 0.4);
@@ -316,13 +337,13 @@
     padding: 8px 15px;
     height: 1em;
     position: relative;
-    bottom: 14rem;
-    left: 1em;
+    bottom: 9rem;
     border-radius: 3px;
   }
 
   footer {
     width: 100%;
+    margin: 0 auto;
     background-color: #4d4d4d;
     padding: 30px 0 30px 0;
   }
@@ -361,8 +382,11 @@
     margin: 8px;
   }
 
+  .headerM1 {
+    margin: 0 auto;
+  }
   .headerM1 .retour {
-    font-size: xx-large;
+    font-size: x-large;
     border: none;
     background-color: white;
     cursor: pointer;
@@ -372,16 +396,28 @@
     color: gray;
   }
   .headerM1 .head {
+    width: 80%;
+    display: flex;
+    align-content: center;
+  }
+  .headerM1 .headimg {
+    width: 20em;
     margin: 0 auto;
   }
 
+  .resto_img1 {
+    width: 99%;
+    margin: 0 auto;
+  }
   .resto_img1 img {
     width: 100%;
+    margin: 0 auto;
     object-fit: cover;
     position: relative;
   }
 
   #omf_menu1 {
+    width: 100%;
     position: relative;
     margin-top: -50px;
     padding-top: 10px;
@@ -395,7 +431,7 @@
     margin: 0 15px;
   }
   #omf_menu1 .menu_heading h1 {
-    font-size: xx-large;
+    font-size: 22px;
   }
   #omf_menu1 .commande {
     display: flex;
@@ -410,17 +446,18 @@
     color: white;
     font-size: 16px;
     text-align: center;
+    border: none;
   }
   #omf_menu1 .commande .commander:hover {
     background: #ff7edb;
   }
 
   #grosCoeur {
-    margin: 30px 10px;
-    border: 0 solid #f2f2f2;
+    margin: 20px 10px;
     background-color: #f2f2f2;
   }
   #grosCoeur :nth-child(1) {
+    font-size: 25px;
     position: absolute;
     right: 10px;
     color: #9356DC;
@@ -428,6 +465,7 @@
     opacity: 1;
   }
   #grosCoeur :nth-child(2) {
+    font-size: 25px;
     position: relative;
     right: 10px;
     color: black;
@@ -440,13 +478,13 @@
   }
   #grosCoeur :hover :nth-child(2) {
     opacity: 0;
-    color: white;
     background-color: #f2f2f2;
   }
 
   .bloc_liste_plats {
     padding-bottom: 50px;
     margin: 0 auto;
+    width: 97%;
   }
   .bloc_liste_plats p {
     margin: 5px 0 5px 20px;
@@ -462,8 +500,12 @@
     margin: 0;
     padding: 0;
   }
+  .bloc_liste_plats ul li {
+    width: 99%;
+    margin: 0 auto;
+  }
   .bloc_liste_plats ul li .bloc_text_plat {
-    width: 100%;
+    width: 95%;
     transition: width;
     transition-duration: 400ms, 400ms;
     transition-timing-function: linear;
@@ -472,23 +514,25 @@
     transition: width, transform;
     transition-duration: 400ms, 400ms;
     transition-timing-function: linear;
-    width: 0em;
-    transform: translate(100%);
+    width: 0px;
+    height: 0px;
+    transform: translate(0%);
   }
   .bloc_liste_plats ul li :hover {
     cursor: pointer;
   }
   .bloc_liste_plats ul li :hover .check_btn {
     background-color: #99E2D0;
-    width: 4.6em;
-    height: 4.6em;
+    width: 3.5em;
+    height: 4em;
     transform: translate(0%);
     bottom: 5px;
   }
   .bloc_liste_plats ul li :hover .check_img {
     color: #99E2D0;
     background-color: white;
-    width: 1.2em;
+    width: 1em;
+    font-size: 16px;
     animation-name: spin;
     animation-duration: 400ms;
     animation-iteration-count: 1;
@@ -544,23 +588,27 @@
     width: 100%;
     position: relative;
     padding: 5px 0 5px 0;
-    height: 4em;
+    height: 3.2em;
     margin: 10px auto;
     background-color: white;
-    border-radius: 30px 30px;
+    border-radius: 20px 20px;
     box-shadow: 0px 5px 2px 1px #e5e5e5;
     display: flex;
+    justify-content: space-between;
   }
   .plats-1 .heading_plats, .plats-2 .heading_plats, .plats-3 .heading_plats, .plats-4 .heading_plats {
+    display: flex;
     white-space: nowrap;
     width: 100%;
   }
   .plats-1 .heading_plats h2, .plats-2 .heading_plats h2, .plats-3 .heading_plats h2, .plats-4 .heading_plats h2 {
     width: 100%;
-    font-size: 18px;
-    margin: 10px 20px 5px 15px;
+    display: inline;
+    font-size: 14px;
+    margin: 5px 20px 5px 15px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .bloc_text_plat {
@@ -574,15 +622,16 @@
   }
 
   .byline_plat {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin: 0 20px;
+    margin: 0 15px;
     /***********/
     /* ***************************************/
   }
   .byline_plat h3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 100;
     margin: 0 20px 0 0;
     padding-right: 10px;
@@ -595,7 +644,7 @@
   }
   .byline_plat p {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
   }
@@ -609,25 +658,23 @@
     margin: 0;
     width: 0em;
     height: 0em;
-    background-color: #f2f2f2;
     border-radius: 0 20px 20px 0;
-    transform: translate(250%);
+    transform: translate(0%);
   }
   .check_btn .check_img {
     display: block;
     width: 0em;
-    color: white;
-    font-size: 18px;
+    color: #f2f2f2;
+    font-size: 1px;
     padding: 6px 5px;
     margin: auto;
     border-radius: 100%;
-    background-color: #f2f2f2;
   }
 }
 /*********** breakP tablette ***********/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .vewport {
-    width: 700px;
+    width: 768px;
   }
 
   h1 {
@@ -655,9 +702,9 @@
   }
 
   body {
-    width: 95%;
+    width: 98%;
     padding: 5px;
-    margin: 5px auto;
+    margin: 0 auto;
   }
 
   header {
@@ -805,7 +852,7 @@
     margin: 0 auto;
   }
   .presentation ul li :hover {
-    background-color: white;
+    background-color: #f2eafb;
     box-shadow: 0px 2px 2px 1px #333333;
   }
   .presentation ul li :hover :not(.fcct1) {
@@ -987,7 +1034,7 @@
   }
 
   .headerM1 .retour {
-    font-size: xx-large;
+    font-size: 50px;
     border: none;
     padding-top: 20px;
     color: black;
@@ -1009,20 +1056,23 @@
   }
 
   #omf_menu1 {
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     margin-top: -50px;
     padding-top: 10px;
     padding-bottom: 50px;
-    border-radius: 20px 20px;
+    border-radius: 20px 20px 0 0;
     background-color: #f2f2f2;
   }
   #omf_menu1 .menu_heading {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
   }
   #omf_menu1 .menu_heading h1 {
-    font-size: xx-large;
+    font-size: 40px;
   }
   #omf_menu1 .commande {
     display: flex;
@@ -1030,20 +1080,23 @@
   }
   #omf_menu1 .commande .commander {
     font-family: "roboto";
-    width: 180px;
+    width: 350px;
+    height: 3em;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 50px;
     padding: 10px 10px;
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
+    border: none;
   }
   #omf_menu1 .commande .commander:hover {
     background: #ff7edb;
   }
 
   #grosCoeur {
-    margin: 30px 10px;
+    font-size: 30px;
+    margin: 35px 20px;
     border: 0 solid #f2f2f2;
     background-color: #f2f2f2;
   }
@@ -1072,16 +1125,18 @@
   }
 
   .bloc_liste_plats {
+    width: 95%;
     padding-bottom: 50px;
     margin: 0 auto;
   }
   .bloc_liste_plats p {
     margin: 5px 0 5px 20px;
+    font-size: 25px;
   }
   .bloc_liste_plats .trait {
     background-color: #99E2D0;
     height: 3px;
-    width: 45px;
+    width: 65px;
     margin: 0 20px 10px;
   }
   .bloc_liste_plats ul {
@@ -1090,23 +1145,26 @@
     padding: 0;
   }
   .bloc_liste_plats ul li .check_btn {
+    margin: 0;
     transition: width, transform;
     transition-duration: 400ms, 400ms;
     transition-timing-function: linear;
-    width: 0em;
-    transform: translate(100%);
+    width: 0;
+    height: 0;
+    transform: translate(0%);
   }
   .bloc_liste_plats ul li :hover {
     cursor: pointer;
   }
   .bloc_liste_plats ul li :hover .check_btn {
     background-color: #99E2D0;
-    width: 12em;
-    height: 4.6em;
+    width: 6em;
+    height: 5.6em;
     transform: translate(0%);
     bottom: 5px;
   }
   .bloc_liste_plats ul li :hover .check_img {
+    font-size: 18px;
     color: #99E2D0;
     background-color: white;
     width: 1.2em;
@@ -1172,23 +1230,25 @@
   }
 
   .plats-1, .plats-2, .plats-3, .plats-4 {
-    width: 100%;
+    width: 95%;
     position: relative;
     padding: 5px 0 5px 0;
-    height: 4em;
+    height: 5em;
     margin: 10px auto;
     background-color: white;
     border-radius: 30px 30px;
     display: flex;
   }
   .plats-1 .heading_plats, .plats-2 .heading_plats, .plats-3 .heading_plats, .plats-4 .heading_plats {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "...";
+    width: 80%;
+    margin-left: 30px;
   }
   .plats-1 h2, .plats-2 h2, .plats-3 h2, .plats-4 h2 {
     font-size: 18px;
     margin: 10px 0 5px 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .bloc_text_plat {
@@ -1197,27 +1257,31 @@
     flex-direction: column;
     width: 100%;
     justify-content: left;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
   }
   .bloc_text_plat h2 {
     font-size: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .byline_plat {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin: 0 20px;
-    /* **************************************
-
-    */
+    margin-left: 40px;
   }
   .byline_plat h3 {
     font-size: 20px;
     font-weight: 100;
     margin: 0 20px 0 0;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .byline_plat p {
     font-weight: bold;
@@ -1230,24 +1294,22 @@
     display: flex;
     align-content: center;
     position: relative;
-    left: 0em;
-    bottom: 0em;
+    left: 0;
+    bottom: 0;
     margin: 0;
-    width: 0em;
-    height: 0em;
-    background-color: #f2f2f2;
+    width: 0;
+    height: 0;
     border-radius: 0 20px 20px 0;
-    transform: translate(250%);
+    transform: translate(0%);
   }
   .check_btn .check_img {
     display: block;
-    width: 0em;
-    color: white;
-    font-size: 18px;
+    width: 0;
+    color: #f2f2f2;
+    font-size: 0px;
     padding: 6px 5px;
     margin: auto;
     border-radius: 100%;
-    background-color: #f2f2f2;
   }
 }
 /************************************************************************************************/
@@ -1440,7 +1502,7 @@
     margin: 0 auto;
   }
   .presentation ul li :hover {
-    background-color: white;
+    background-color: #f2eafb;
     box-shadow: 0px 2px 2px 1px #333333;
   }
   .presentation ul li :hover :not(.fcct1) {
@@ -1624,7 +1686,7 @@
   }
 
   .headerM1 .retour {
-    font-size: xx-large;
+    font-size: 50px;
     border: none;
     color: black;
     padding-top: 20px;
@@ -1659,7 +1721,8 @@
     margin: 0 15px;
   }
   #omf_menu1 .menu_heading h1 {
-    font-size: xx-large;
+    font-size: 40px;
+    margin-left: 50px;
   }
   #omf_menu1 .commande {
     display: flex;
@@ -1674,6 +1737,8 @@
     color: white;
     font-size: large;
     text-align: center;
+    border: none;
+    height: 4em;
   }
   #omf_menu1 .commande .commander:hover {
     background: #ff7edb;
@@ -1685,15 +1750,17 @@
     background-color: #f2f2f2;
   }
   #grosCoeur :nth-child(1) {
+    font-size: 50px;
     position: absolute;
-    right: 10px;
+    right: 30px;
     color: #9356DC;
     background-color: #f2f2f2;
     opacity: 1;
   }
   #grosCoeur :nth-child(2) {
+    font-size: 50px;
     position: relative;
-    right: 10px;
+    right: 30px;
     color: black;
     background-color: #f2f2f2;
     transition: opacity 1s cubic-bezier(0.66, 0.02, 0.56, 0.4);
@@ -1731,18 +1798,16 @@
     transition: width, transform;
     transition-duration: 400ms, 400ms;
     transition-timing-function: linear;
-    width: 0em;
-    transform: translate(100%);
+    width: 0;
+    transform: translate(0%);
   }
   .bloc_liste_plats ul li :hover {
     cursor: pointer;
-    background-color: #e4d5f6;
-    margin-left: 10px;
   }
   .bloc_liste_plats ul li :hover .check_btn {
     background-color: #99E2D0;
-    width: 10em;
-    height: 4.6em;
+    width: 6em;
+    height: 6.6em;
     transform: translate(0%);
     bottom: 5px;
   }
@@ -1808,40 +1873,40 @@
   }
 
   .plats-1, .plats-2, .plats-3, .plats-4 {
-    width: 100%;
+    width: 90%;
     position: relative;
     padding: 5px 0 5px 0;
-    height: 4em;
+    height: 6em;
     margin: 10px auto;
     background-color: white;
     border-radius: 30px 30px;
     display: flex;
-  }
-  .plats-1 .heading_plats, .plats-2 .heading_plats, .plats-3 .heading_plats, .plats-4 .heading_plats {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "...";
+    align-content: center;
   }
   .plats-1 h2, .plats-2 h2, .plats-3 h2, .plats-4 h2 {
     font-size: x-large;
     margin: 10px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .bloc_text_plat {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
-    justify-content: left;
+    justify-content: center;
+    align-content: center;
     padding: 0;
     margin: 0;
   }
 
+  .heading_plats {
+    width: 50%;
+    align-content: center;
+  }
+
   .byline_plat {
     width: 40%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     margin: 20px auto;
     /* ***************************************/
   }
@@ -1850,38 +1915,37 @@
     font-weight: 100;
     margin: 0 20px 0 0;
     padding: 0;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: "...";
+    text-overflow: ellipsis;
   }
   .byline_plat p {
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 5px 0;
   }
 
   .check_btn {
     display: flex;
     align-content: center;
     position: relative;
-    left: 0em;
-    bottom: 0em;
+    left: 0;
+    bottom: 0;
     margin: 0;
-    width: 0em;
-    height: 0em;
-    background-color: #f2f2f2;
+    width: 0;
+    height: 0;
     border-radius: 0 20px 20px 0;
-    transform: translate(250%);
+    transform: translate(0%);
   }
   .check_btn .check_img {
     display: block;
-    width: 0em;
-    color: white;
+    width: 0;
+    color: #f2f2f2;
     font-size: 18px;
     padding: 6px 5px;
     margin: auto;
     border-radius: 100%;
-    background-color: #f2f2f2;
   }
 }
 
