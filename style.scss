@@ -2216,7 +2216,7 @@ transform: translate(0%);
         cursor:pointer;     
             & :nth-child(2){ 
             opacity: 0;
-            color:white;
+            
             background-color: $background-col;
             }
         }
@@ -2260,9 +2260,11 @@ transform: translate(0%);
                 }
 
                 & :hover{              
-                cursor:pointer;
-                
-              
+                cursor:pointer;                
+                    & h2, h3, p{
+                    color: $Primaire;
+                    }
+
                     & .check_btn{
                     background-color:$Tertiaire;                 
                     width: 6em;
@@ -2311,7 +2313,7 @@ transform: translate(0%);
         opacity:.25; margin-bottom:20px;
         }
         50%{
-        opacity:.5; margin-bottom:15px;    
+        opacity:.35; margin-bottom:15px;    
         }
         100% {
         opacity:1; margin-bottom:10px;
@@ -2379,7 +2381,8 @@ transform: translate(0%);
     
     .heading_plats{
     width:50%;
-    align-content:center;
+    display:flex;
+    align-items:center;     
     }
 
     .byline_plat{

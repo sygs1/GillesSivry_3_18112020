@@ -1771,7 +1771,6 @@
   }
   #grosCoeur :hover :nth-child(2) {
     opacity: 0;
-    color: white;
     background-color: #f2f2f2;
   }
 
@@ -1803,6 +1802,9 @@
   }
   .bloc_liste_plats ul li :hover {
     cursor: pointer;
+  }
+  .bloc_liste_plats ul li :hover h2, .bloc_liste_plats ul li :hover h3, .bloc_liste_plats ul li :hover p {
+    color: #9356DC;
   }
   .bloc_liste_plats ul li :hover .check_btn {
     background-color: #99E2D0;
@@ -1840,7 +1842,7 @@
       margin-bottom: 20px;
     }
     50% {
-      opacity: 0.5;
+      opacity: 0.35;
       margin-bottom: 15px;
     }
     100% {
@@ -1902,7 +1904,8 @@
 
   .heading_plats {
     width: 50%;
-    align-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .byline_plat {
