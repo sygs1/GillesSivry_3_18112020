@@ -54,43 +54,72 @@
     margin: 0 auto;
   }
 
+  @keyframes spAp {
+    0% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #a6a6a6;
+    }
+    80% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #e5e5e5;
+    }
+    90% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #efefef;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+      position: relative;
+      background-color: transparent;
+    }
+  }
   .sp-heart {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     z-index: -1;
     position: relative;
-    margin: 0 auto;
-    width: 95%;
-    height: 100%;
-    text-align: center;
-  }
-  .sp-heart i {
-    font-size: 200px;
-    align-self: center;
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .sp-heart div {
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sp-heart div i {
     color: #bc95e9;
+    font-size: 300px;
+    transform-origin: 50%;
     position: absolute;
-    top: 300px;
-    width: 100%;
+    bottom: 200px;
     background: inherit;
-    animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-delay: 0.2s;
+    animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: 0.1s;
     animation-iteration-count: 2;
     opacity: 0;
   }
-  .sp-heart div:after, .sp-heart div:before {
+  .sp-heart div div:after, .sp-heart div div:before {
     content: " ";
     position: absolute;
     display: block;
-    width: 100px;
-    height: 100px;
-    background: transparent;
+    width: 10px;
+    height: 10px;
+    background: inherit;
   }
-  .sp-heart div:before {
-    left: -100px;
+  .sp-heart div i:before {
     border-radius: 50% 0 0 50%;
   }
-  .sp-heart div:after {
-    top: -100px;
+  .sp-heart div i:after {
     border-radius: 50% 50% 0 0;
   }
 
@@ -717,42 +746,72 @@
     width: 500px;
   }
 
+  @keyframes spAp {
+    0% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #a6a6a6;
+    }
+    80% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #e5e5e5;
+    }
+    90% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #efefef;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+      position: relative;
+      background-color: transparent;
+    }
+  }
   .sp-heart {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     z-index: -1;
     position: relative;
-    margin: 0 auto;
-    width: 400px;
-    height: 10px;
-    text-align: center;
-    align-content: center;
-  }
-  .sp-heart i {
-    font-size: 400px;
-    color: #bc95e9;
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .sp-heart div {
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sp-heart div i {
+    color: #bc95e9;
+    font-size: 400px;
+    transform-origin: 50%;
     position: absolute;
-    top: 400px;
+    bottom: 200px;
     background: inherit;
-    animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-delay: 0.2s;
+    animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: 0.1s;
     animation-iteration-count: 2;
     opacity: 0;
   }
-  .sp-heart div:after, .sp-heart div:before {
+  .sp-heart div div:after, .sp-heart div div:before {
     content: " ";
     position: absolute;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 10px;
+    height: 10px;
     background: inherit;
   }
-  .sp-heart div:before {
-    left: -7rem;
+  .sp-heart div i:before {
     border-radius: 50% 0 0 50%;
   }
-  .sp-heart div:after {
-    top: -7rem;
+  .sp-heart div i:after {
     border-radius: 50% 50% 0 0;
   }
 
@@ -1366,43 +1425,72 @@
     width: 500px;
   }
 
+  @keyframes spAp {
+    0% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #a6a6a6;
+    }
+    80% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #e5e5e5;
+    }
+    90% {
+      opacity: 1;
+      z-index: 999;
+      position: absolute;
+      background-color: #efefef;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+      position: relative;
+      background-color: transparent;
+    }
+  }
   .sp-heart {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     z-index: -1;
     position: relative;
-    margin: 0 auto;
-    width: 500px;
-    height: 10px;
-    text-align: center;
-  }
-  .sp-heart i {
-    color: #bc95e9;
-    font-size: 500px;
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .sp-heart div {
+    z-index: 1;
+    width: 60%;
+    height: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sp-heart div i {
+    color: #bc95e9;
+    font-size: 400px;
+    transform-origin: 50%;
     position: absolute;
-    top: 300px;
-    width: 500px;
-    height: 500px;
+    bottom: 200px;
     background: inherit;
-    animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-delay: 0.2s;
+    animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: 0.1s;
     animation-iteration-count: 2;
     opacity: 0;
   }
-  .sp-heart div:after, .sp-heart div:before {
+  .sp-heart div div:after, .sp-heart div div:before {
     content: " ";
     position: absolute;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 10px;
+    height: 10px;
     background: inherit;
   }
-  .sp-heart div:before {
-    left: -7rem;
+  .sp-heart div i:before {
     border-radius: 50% 0 0 50%;
   }
-  .sp-heart div:after {
-    top: -7rem;
+  .sp-heart div i:after {
     border-radius: 50% 50% 0 0;
   }
 
@@ -1433,7 +1521,7 @@
     }
   }
   .localisation {
-    width: 90%;
+    width: 100%;
     background-color: #f2f2f2;
     padding-bottom: 30px;
     margin: 0 auto;
@@ -1703,6 +1791,7 @@
 
   .resto_img1 img {
     width: 100%;
+    height: 30em;
     object-fit: cover;
     position: relative;
   }

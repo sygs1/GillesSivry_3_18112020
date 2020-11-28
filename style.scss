@@ -79,85 +79,109 @@ margin: 0 auto;
 // --- --- ----- 
 
 
-.sp-heart {
-z-index: -1;   
-position: relative;
-margin:0 auto;
-width:95%;
-height:100%;
-text-align:center;
-
-
-    & i{
-    font-size:200px;       
-    align-self: center;
-    }
-
-    & div{
-    color:lighten($Primaire,15);
-    position: absolute;
-    top:300px;
-    width: 100%;
-    
-    background: inherit;
-    animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-delay: .2s;
-    animation-iteration-count:2;
-    opacity:0;
-   
-    }
-
-    & div:after, div:before {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    }
-
-    & div:before {
-    left: -100px;
-    border-radius: 50% 0 0 50%;
-    }
-
-    & div:after {
-    top: -100px;
-    border-radius: 50% 50% 0 0;
-    
-    }
-    
-
-}
-@keyframes sp-heart {
+@keyframes spAp {
     0% {
-    transform: scale(0.95);
-    opacity:0;
-    
+    opacity:1;
+    z-index: 999;
+    position:absolute;
+    background-color: darken($background-col,30);
     }
-    5% {
-    transform: scale(1.1);
-    opacity:5%;
+   80%{
+        opacity:1;
+        z-index: 999;
+        position:absolute;
+        background-color:darken($background-col,5);  
     }
-    39% {
-    transform: scale(0.85);
-    opacity:39%;
-    }
-    45% {
-    transform: scale(1);
-    opacity:45%;
-    }
-    60% {
-    transform: scale(0.95);
-    opacity:60%;
+    90% {
+    opacity:1;
+    z-index:999;
+    position:absolute;
+    background-color: darken($background-col,1);
     }
     100% {
-    transform: scale(0.9);
-    opacity:0%;
-   
+    opacity:0;
+    z-index:-1;
+    position:relative;
+    background-color:transparent;
     }
-    
 }
+
+.sp-heart {
+    width:100%;
+    height:100%;   
+    opacity:0;
+    z-index: -1;
+    position: relative; 
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1); 
+      
+        
+        & div{
+        z-index:1;
+        width: 50%;
+        height:50%;
+        margin: 0 auto;
+        display:flex;
+        justify-content: center;  
+
+            & i{
+            color:lighten($Primaire,15);
+            font-size: 300px;
+            transform-origin: 50%;
+            position: absolute;
+            bottom:200px;           
+            background: inherit;
+            animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-delay: .1s;
+            animation-iteration-count:2;
+            opacity:0;
+            }
+        
+    
+            & div:after, div:before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 10px;
+            height:10px;
+            background: inherit;
+            }
+        
+            & i:before {
+            border-radius: 50% 0 0 50%;
+            }
+            & i:after {
+            border-radius: 50% 50% 0 0;
+            
+            }
+        }
+    }
+    @keyframes sp-heart {
+        0% {
+        transform: scale(0.95);
+        opacity:0;
+        }
+        5% {
+        transform: scale(1.1);
+        opacity:5%;
+        }
+        39% {
+        transform: scale(0.85);
+        opacity:39%;
+        }
+        45% {
+        transform: scale(1);
+        opacity:45%;
+        }
+        60% {
+        transform: scale(0.95);
+        opacity:60%;
+        }
+        100% {
+        transform: scale(0.9);
+        opacity:0%;
+        }
+        
+    }
 
 
 //***************   localisation  ****************/
@@ -911,49 +935,81 @@ margin: 0 auto;
 // --- --- ----- 
 
 
-.sp-heart {
-    z-index: -1;
-    position: relative;
-    margin:0 auto;
-    width:400px;
-    height:10px;
-    text-align:center;
-    align-content:center;
-    
-    
-        & i{
-        font-size: 400px;
-        color:lighten($Primaire,15);
-        }
+@keyframes spAp {
+    0% {
+    opacity:1;
+    z-index: 999;
+    position:absolute;
+    background-color: darken($background-col,30);
+    }
+   80%{
+        opacity:1;
+        z-index: 999;
+        position:absolute;
+        background-color:darken($background-col,5);  
+    }
+    90% {
+    opacity:1;
+    z-index:999;
+    position:absolute;
+    background-color: darken($background-col,1);
+    }
+    100% {
+    opacity:0;
+    z-index:-1;
+    position:relative;
+    background-color:transparent;
+    }
+}
 
+.sp-heart {
+    width:100%;
+    height:100%;   
+    opacity:0;
+    z-index: -1;
+    position: relative; 
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1); 
+      
+        
         & div{
-        position: absolute;
-        top:400px;
-        background: inherit;
-        animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-        animation-delay: .2s;
-        animation-iteration-count:2;
-        opacity:0;
-        }
+        z-index:1;
+        width: 50%;
+        height:50%;
+        margin: 0 auto;
+        display:flex;
+        justify-content: center;  
+
+            & i{
+            color:lighten($Primaire,15);
+            font-size: 400px;
+            transform-origin: 50%;
+            position: absolute;
+            bottom:200px;           
+            background: inherit;
+            animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-delay: .1s;
+            animation-iteration-count:2;
+            opacity:0;
+            }
+        
     
-        & div:after, div:before {
-        content: " ";
-        position: absolute;
-        display: block;
-        width: 400px;
-        height: 400px;
-        background: inherit;
+            & div:after, div:before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 10px;
+            height:10px;
+            background: inherit;
+            }
+        
+            & i:before {
+            border-radius: 50% 0 0 50%;
+            }
+            & i:after {
+            border-radius: 50% 50% 0 0;
+            
+            }
         }
-    
-        & div:before {
-        left: -7rem;
-        border-radius: 50% 0 0 50%;
-        }
-        & div:after {
-        top: -7rem;
-        border-radius: 50% 50% 0 0;
-        }
-    
     }
     @keyframes sp-heart {
         0% {
@@ -982,6 +1038,7 @@ margin: 0 auto;
         }
         
     }
+
 
 
 
@@ -1704,55 +1761,85 @@ transform: translate(0%);
         width: 500px;
         }
     }
+
     
 //    ---- ** load spinner
 // --- --- ----- 
-
+@keyframes spAp {
+    0% {
+    opacity:1;
+    z-index: 999;
+    position:absolute;
+    background-color: darken($background-col,30);
+    }
+   80%{
+        opacity:1;
+        z-index: 999;
+        position:absolute;
+        background-color:darken($background-col,5);  
+    }
+    90% {
+    opacity:1;
+    z-index:999;
+    position:absolute;
+    background-color: darken($background-col,1);
+    }
+    100% {
+    opacity:0;
+    z-index:-1;
+    position:relative;
+    background-color:transparent;
+    }
+}
 
 .sp-heart {
+    width:100%;
+    height:100%;   
+    opacity:0;
     z-index: -1;
-    position: relative;
-    margin:0 auto;
-    width:500px;
-    height:10px;
-    text-align:center;
-    
-    
-        & i{
-        color:lighten($Primaire,15);
-        font-size: 500px;
-        }
-        & div{
-        position: absolute;
-        top:300px;
-        width: 500px;
-        height:500px;
-        background: inherit;
-        animation: sp-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-        animation-delay: .2s;
-        animation-iteration-count:2;
-        opacity:0;
-        }
-    
-        & div:after, div:before {
-        content: " ";
-        position: absolute;
-        display: block;
-        width: 400px;
-        height:400px;
-        background: inherit;
-        }
-    
-        & div:before {
-        left: -7rem;
-        border-radius: 50% 0 0 50%;
-        }
-        & div:after {
-        top: -7rem;
-        border-radius: 50% 50% 0 0;
+    position: relative; 
+    animation: spAp 3s 1 cubic-bezier(0.215, 0.61, 0.355, 1); 
+      
         
-        }
+        & div{
+        z-index:1;
+        width: 60%;
+        height:10px;
+        margin: 0 auto;
+        display:flex;
+        justify-content: center;  
+
+            & i{
+            color:lighten($Primaire,15);
+            font-size: 400px;
+            transform-origin: 50%;
+            position: absolute;
+            bottom:200px;           
+            background: inherit;
+            animation: sp-heart 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-delay: .1s;
+            animation-iteration-count:2;
+            opacity:0;
+            }
+        
     
+            & div:after, div:before {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 10px;
+            height:10px;
+            background: inherit;
+            }
+        
+            & i:before {
+            border-radius: 50% 0 0 50%;
+            }
+            & i:after {
+            border-radius: 50% 50% 0 0;
+            
+            }
+        }
     }
     @keyframes sp-heart {
         0% {
@@ -1789,7 +1876,7 @@ transform: translate(0%);
     //***************   localisation  ****************/
     .localisation{
        
-    width:90%;
+    width:100%;
     background-color: $background-col; 
     padding-bottom: 30px;
     margin: 0 auto;
@@ -2135,6 +2222,7 @@ transform: translate(0%);
     //******** image menu 1 ******/
     .resto_img1 img{
     width:100%;
+    height:30em;
     object-fit: cover;
     position: relative;
     }
